@@ -10,16 +10,16 @@ body {
 }
 
 .card {
-  background-color: #dceeff;
-  border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  width: 80%;
-  max-width: 900px;
+  width: 90%;       /* increase from 80% to 90% */
+  max-width: 1100px; /* increase max width from 900px to 1100px */
+  background-color: #dceeff;
+  border-radius: 40px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* include padding in width */
+  box-sizing: border-box;
 }
 
 .text {
