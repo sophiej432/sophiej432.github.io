@@ -13,6 +13,7 @@ body {
   background-color: #dceeff;
   border-radius: 40px;
   display: flex;
+  flex-wrap: nowrap; /* prevent wrapping */
   align-items: center;
   justify-content: space-between;
   padding: 40px;
@@ -20,6 +21,7 @@ body {
   max-width: 900px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .text {
   flex: 1;
