@@ -86,14 +86,17 @@ button:hover {
 }
 
 .image {
-  flex: 0 0 250px; /* fixed width for the image container */
+  flex: 0 0 250px; /* fixed width for container */
   background-color: #f3ccff;
   border-radius: 40px;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* center image inside container */
+  align-items: center;
 }
 
 .image img {
-  width: 100%; /* fills the container */
+  width: 250px; /* fixed image width */
   border-radius: 25px;
 }
