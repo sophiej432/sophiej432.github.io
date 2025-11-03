@@ -46,19 +46,30 @@ body {
   line-height: 1.6;
 }
 
-button {
-  margin-top: 20px;
-  background-color: #e5ff59;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 25px;
-  font-weight: bold;
-  cursor: pointer;
+/* Buttons layout */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* helps on smaller screens */
 }
 
-button:hover {
-  background-color: #d4f000;
+/* Button style */
+.btn {
+  text-decoration: none;
+  background-color: #e5ff59;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #d4f000;
+  transform: scale(1.05);
+}
+
 
 .image {
   background-color: #f3ccff;
