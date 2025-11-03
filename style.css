@@ -67,19 +67,20 @@ button:hover {
 
 .btn {
   display: inline-block;
-  background-color: #d8ff3e; /* same yellow */
+  background-color: #e5ff59;
   color: #000;
-  font-weight: 600;
-  padding: 10px 20px;
-  border: none;
+  font-weight: bold;
+  padding: 12px 25px;
   border-radius: 25px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #c6ef35;
+  background-color: #d4f000;
+  transform: scale(1.05);
 }
+
 
 
 
