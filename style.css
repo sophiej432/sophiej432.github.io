@@ -1,5 +1,6 @@
+/* Body styling */
 body {
-  background-color: #a9d6ff;
+  background-color: #a9d6ff; /* soft blue background */
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
@@ -7,23 +8,29 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* keep items in row */
-  padding: 40px;
-  width: 1000px;              /* fixed width that fits text + image */
-  background-color: #dceeff;
-  border-radius: 40px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   box-sizing: border-box;
 }
 
+/* Card styling */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 90%;           /* wider card for laptop */
+  max-width: 1100px;    /* maximum width */
+  background-color: #dceeff;
+  border-radius: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Text section */
 .text {
-  flex: 1;                   /* takes remaining space */
-  padding-right: 30px;       /* spacing from image */
+  flex: 1 1 auto;       /* take remaining space */
+  min-width: 400px;     /* prevent shrinking too much */
+  max-width: 700px;     /* prevent growing too much */
+  padding-right: 30px;  /* space between text and image */
   box-sizing: border-box;
 }
 
@@ -31,11 +38,13 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
+  color: #000;
   margin-bottom: 10px;
 }
 
@@ -45,13 +54,58 @@ body {
   line-height: 1.6;
 }
 
+/* Buttons */
+button {
+  margin-top: 20px;
+  background-color: #e5ff59;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4f000;
+}
+
 .button-group {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
 
-.btn, button {
+.btn {
+  display: inline-block;
   background-color: #e5ff59;
-  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d4f000;
+  transform: scale(1.05);
+}
+
+/* Image section */
+.image {
+  width: 250px;             /* fixed container width */
+  padding: 20px;
+  background-color: #f3ccff;
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 250px;             /* fixed image width */
+  border-radius: 25px;
+  display: block;
+}
 
