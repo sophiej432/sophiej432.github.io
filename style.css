@@ -13,19 +13,20 @@ body {
   background-color: #dceeff;
   border-radius: 40px;
   display: flex;
-  flex-wrap: nowrap; /* prevent wrapping */
   align-items: center;
   justify-content: space-between;
   padding: 40px;
   width: 80%;
   max-width: 900px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* include padding in width */
 }
 
-
 .text {
-  flex: 1;
+  flex: 1 1 auto;        /* take remaining space */
   padding-right: 30px;
+  min-width: 300px;      /* prevent text from shrinking too much */
+  box-sizing: border-box;
 }
 
 .text h1 {
@@ -47,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
 button {
   margin-top: 20px;
   background-color: #e5ff59;
@@ -83,16 +85,15 @@ button:hover {
   transform: scale(1.05);
 }
 
-
-
-
 .image {
+  flex: 0 0 250px; /* fixed width for the image container */
   background-color: #f3ccff;
   border-radius: 40px;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .image img {
-  width: 250px;
+  width: 100%; /* fills the container */
   border-radius: 25px;
 }
