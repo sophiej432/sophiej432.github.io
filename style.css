@@ -109,3 +109,32 @@ button:hover {
   display: block;
 }
 
+/* contact form*/
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  margin-top: 10px;
+  background-color: #e5ff59;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d4f000;
+  transform: scale(1.05);
+}
