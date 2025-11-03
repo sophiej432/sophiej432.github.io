@@ -167,6 +167,7 @@ form button:hover {
   gap: 10px;
   justify-content: center;
   margin-bottom: 15px;
+  color: #BDB3FB;
 }
 
 .cell {
@@ -184,7 +185,7 @@ form button:hover {
 }
 
 .cell:hover {
-  background-color: #e0b0ff;
+  background-color: #25FF4F;
 }
 
 #status {
