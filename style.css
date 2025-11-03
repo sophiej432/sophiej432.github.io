@@ -23,9 +23,9 @@ body {
 }
 
 .text {
-  flex: 1 1 auto;        /* take remaining space */
+  flex: 1;        /* take remaining space */
   padding-right: 30px;
-  min-width: 300px;      /* prevent text from shrinking too much */
+  min-width: 400px;      /* prevent text from shrinking too much */
   box-sizing: border-box;
 }
 
