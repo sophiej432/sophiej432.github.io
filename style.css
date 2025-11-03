@@ -59,29 +59,28 @@ button:hover {
   background-color: #d4f000;
 }
 
-/* Buttons layout */
-.buttons {
-  margin-top: 25px;
+.button-group {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap; /* helps on smaller screens */
+  margin-top: 20px;
 }
 
-/* Button style */
 .btn {
-  text-decoration: none;
-  background-color: #e5ff59;
+  display: inline-block;
+  background-color: #d8ff3e; /* same yellow */
   color: #000;
-  font-weight: bold;
-  padding: 12px 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
   border-radius: 25px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #d4f000;
-  transform: scale(1.05);
+  background-color: #c6ef35;
 }
+
 
 
 .image {
