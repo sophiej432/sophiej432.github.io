@@ -17,94 +17,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  width: 90%;           /* wider card for laptop */
-  max-width: 1200px;    /* maximum width */
+  width: 90%;               /* relative to viewport */
+  max-width: 1200px;        /* limit max width */
   background-color: #dceeff;
   border-radius: 40px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-/* Text section */
-.text {
-  width: 65%;
-  padding-right: 20px;  /* space between text and image */
-  box-sizing: border-box;
-}
-
-.text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.text p {
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Buttons */
-button {
-  margin-top: 20px;
-  background-color: #e5ff59;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 25px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #d4f000;
-}
-
-.button-group {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #e5ff59;
-  color: #000;
-  font-weight: bold;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #d4f000;
-  transform: scale(1.05);
-}
-
-/* Image section */
-.image {
-  width: 30%;             /* fixed container width */
-  padding: 20px;
-  background-color: #f3ccff;
-  border-radius: 40px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image img {
-  width: 100%;       
-  max-width: 250px; /* fixed image width */
-  border-radius: 25px;
-  display: block;
-}
+  box-sizing: bor
 
