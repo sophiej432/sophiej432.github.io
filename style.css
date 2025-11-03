@@ -172,7 +172,7 @@ form button:hover {
 .cell {
   width: 100px;
   height: 100px;
-  background-color: #f3ccff;
+  background-color: #CCFFCC;
   display: flex;
   justify-content: center;
   align-items: center;
