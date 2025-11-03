@@ -167,7 +167,7 @@ form button:hover {
   gap: 10px;
   justify-content: center;
   margin-bottom: 15px;
-  color: #BDB3FB;
+  background-color: #BDB3FB;
 }
 
 .cell {
