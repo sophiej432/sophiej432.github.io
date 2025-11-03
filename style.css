@@ -45,6 +45,19 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+button {
+  margin-top: 20px;
+  background-color: #e5ff59;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4f000;
+}
 
 /* Buttons layout */
 .buttons {
