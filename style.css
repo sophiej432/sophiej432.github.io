@@ -138,3 +138,20 @@ form button:hover {
   background-color: #d4f000;
   transform: scale(1.05);
 }
+
+/*project grid*/
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #f3ccff;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1 1 200px; /* flexible width */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
