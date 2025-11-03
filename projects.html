@@ -16,7 +16,32 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>Project 1</h3>
-        <p>Short description of project 1.</p>
+        <p>TIC TAC TOE Game</p>
+        <div class="card">
+  <div class="text">
+    <p>Play a simple interactive Tic Tac Toe game!</p>
+
+    <div class="game-container">
+      <div id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+
+      <p id="status">Player X's turn</p>
+      <button id="restart">Restart Game</button>
+    </div>
+
+    <a href="index.html" class="btn" style="margin-top:20px;">Back to Home</a>
+  </div>
+</div>
+
       </div>
       <div class="project-card">
         <h3>Project 2</h3>
@@ -31,5 +56,55 @@
       <a href="index.html" class="btn">Back to Home</a>
     </div>
   </div>
+  <script>
+const board = document.querySelector('#board');
+const cells = document.querySelectorAll('.cell');
+const statusText = document.getElementById('status');
+const restartBtn = document.getElementById('restart');
+
+let currentPlayer = 'X';
+let gameState = ["", "", "", "", "", "", "", "", ""];
+
+const winningConditions = [
+  [0,1,2], [3,4,5], [6,7,8],
+  [0,3,6], [1,4,7], [2,5,8],
+  [0,4,8], [2,4,6]
+];
+
+function handleCellClick(e) {
+  const index = e.target.getAttribute('data-index');
+  if(gameState[index] !== "" || checkWinner()) return;
+
+  gameState[index] = currentPlayer;
+  e.target.textContent = currentPlayer;
+
+  if(checkWinner()) {
+    statusText.textContent = `Player ${currentPlayer} wins!`;
+  } else if(!gameState.includes("")) {
+    statusText.textContent = "It's a draw!";
+  } else {
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    statusText.textContent = `Player ${currentPlayer}'s turn`;
+  }
+}
+
+function checkWinner() {
+  return winningConditions.some(condition => {
+    const [a, b, c] = condition;
+    return gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c];
+  });
+}
+
+function restartGame() {
+  gameState = ["", "", "", "", "", "", "", "", ""];
+  currentPlayer = 'X';
+  statusText.textContent = `Player ${currentPlayer}'s turn`;
+  cells.forEach(cell => cell.textContent = "");
+}
+
+cells.forEach(cell => cell.addEventListener('click', handleCellClick));
+restartBtn.addEventListener('click', restartGame);
+</script>
+
 </body>
 </html>
