@@ -93,7 +93,7 @@ button:hover {
 
 /* Image section */
 .image {
-  width: 250px;             /* fixed container width */
+  width: 150px;             /* fixed container width */
   padding: 20px;
   background-color: #f3ccff;
   border-radius: 40px;
@@ -104,7 +104,7 @@ button:hover {
 }
 
 .image img {
-  width: 250px;             /* fixed image width */
+  width: 150px;             /* fixed image width */
   border-radius: 25px;
   display: block;
 }
